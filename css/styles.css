@@ -31,9 +31,16 @@ html {
   font-style: normal;
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
+  margin: 0;
 }
 a {
   text-decoration: none;
+}
+.list,
+.block-list,
+.section-list,
+.section-list-icon {
+  list-style: none;
 }
 /* Шапка сайта */
 .page-header {
@@ -51,10 +58,8 @@ a {
 .logo-studio {
   color: var(--title-text-color);
 }
+
 /* site-nav */
-.list {
-  list-style: none;
-}
 .site-nav .link {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -104,13 +109,13 @@ a {
 .hero,
 .section,
 .block,
-.footer {
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   outline: 2px solid tomato;
-  margin: 5px;
-}
-.block-list,
-.section-list {
-  list-style: none;
 }
 .block-list-text {
   font-family: Roboto, sans-serif;
@@ -184,9 +189,6 @@ a {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.section-list-icon {
-  list-style: none;
-}
 .section-list-icon-link {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -213,6 +215,9 @@ a {
   letter-spacing: 0.06em;
   color: var(--button-text-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
 }
 .button.secondary {
   font-family: Roboto, sans-serif;
@@ -220,12 +225,14 @@ a {
   font-weight: 900;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
+  display: inline-block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--button-text-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
+  padding: 10px 45px;
 }
 
 /* Footer */
@@ -286,6 +293,8 @@ a {
   letter-spacing: 0.03em;
   background: var(--section-bg-color);
   border-radius: 4px;
+  padding: 6px 22px;
+  display: inline-block;
 }
 .section-list-button:hover,
 .section-list-button:focus {
@@ -301,9 +310,6 @@ a {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-}
-.section-projectslist-link {
-  text-decoration: none;
 }
 .section-projectlist-title {
   font-family: Roboto, sans-serif;
