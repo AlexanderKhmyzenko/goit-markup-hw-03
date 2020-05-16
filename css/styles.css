@@ -25,13 +25,12 @@ html {
 }
 /* body */
 .page {
-  /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif; */
+  margin: 0;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
-  margin: 0;
 }
 a {
   text-decoration: none;
@@ -41,12 +40,20 @@ a {
 .section-list,
 .section-list-icon {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 /* Шапка сайта */
 .page-header {
   background-color: var(--header-bg-color);
 }
+.main-nav,
+.container-nav {
+  display: flex;
+  align-items: center;
+}
 .logo {
+  margin-right: 86px;
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -60,7 +67,20 @@ a {
 }
 
 /* site-nav */
+.site-nav {
+  display: flex;
+}
+.site-nav .item {
+  margin-right: 50px;
+}
+.site-nav .item:last-child {
+  margin-right: 0;
+}
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -75,6 +95,13 @@ a {
 }
 .site-nav .link.current {
   color: var(--accent-color);
+}
+.communication {
+  display: flex;
+  margin-left: auto;
+}
+.communication .item + .item {
+  margin-left: 30px;
 }
 .communication .link {
   font-family: Roboto, sans-serif;
@@ -91,23 +118,52 @@ a {
 }
 /* main */
 /* hero */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-image: url(/images/hero.svg);
+  text-align: center;
+  height: 600px;
+}
+.heading {
+  outline: 2px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  width: 646px;
+  height: 200px;
+  text-align: center;
+}
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 46px;
+
+  height: 104px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
-  background-image: url(/images/hero.svg);
 }
-/* block(div,section) */
-
-.page-header,
 .hero,
-.section,
+.advantages,
+.work,
+.team,
+.customers {
+  margin-bottom: 94px;
+}
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .block,
 .container {
   width: 1230px;
@@ -117,7 +173,24 @@ a {
   margin-right: auto;
   outline: 2px solid tomato;
 }
+.block-title,
+.section-title {
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
 .block-list-text {
+  margin: 0;
+  margin-top: 10px;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -127,6 +200,9 @@ a {
   color: var(--primary-text-color);
 }
 .block-list-title {
+  margin: 0;
+  margin-top: 30px;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -138,6 +214,8 @@ a {
 }
 
 .block-list-work {
+  margin: 0;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -147,17 +225,6 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--other-text-color);
-}
-.block-title,
-.section-title {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
 }
 
 .block-list-link:hover,
@@ -170,6 +237,9 @@ a {
   background-color: var(--section-bg-color);
 }
 .section-list-title {
+  margin: 0;
+  margin-top: 30px;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -180,6 +250,9 @@ a {
   color: var(--title-text-color);
 }
 .section-list-text {
+  margin: 0;
+  margin-top: 10px;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -188,6 +261,10 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.section-list-icon {
+  margin-top: 28px;
+  margin-bottom: 36px;
 }
 .section-list-icon-link {
   font-family: Roboto, sans-serif;
@@ -204,7 +281,11 @@ a {
 }
 
 /* button */
-.button.primary {
+.button-primary {
+  display: inline-block;
+  padding: 10px 32px;
+
+  width: 200;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -216,10 +297,11 @@ a {
   color: var(--button-text-color);
   background-color: var(--accent-color);
   border-radius: 4px;
-  padding: 10px 32px;
-  display: inline-block;
 }
-.button.secondary {
+.button-secondary {
+  padding: 10px 45px;
+
+  width: 200;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -232,7 +314,6 @@ a {
   color: var(--button-text-color);
   background-color: var(--accent-color);
   border-radius: 4px;
-  padding: 10px 45px;
 }
 
 /* Footer */
@@ -272,18 +353,29 @@ a {
 }
 .footer-inscription {
   color: var(--footer-inscription-color);
+  margin: 0;
 }
 
 /* CSS для вкладки Портфолио(portfolio.html) */
 
 .portfolio {
   background-color: var(--portfolio-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section-list,
 .section-projectslist {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.buttons {
+  margin-bottom: 50px;
 }
 .section-list-button {
+  display: inline-block;
+  padding: 6px 22px;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -293,8 +385,6 @@ a {
   letter-spacing: 0.03em;
   background: var(--section-bg-color);
   border-radius: 4px;
-  padding: 6px 22px;
-  display: inline-block;
 }
 .section-list-button:hover,
 .section-list-button:focus {
@@ -311,7 +401,13 @@ a {
     0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
+.section-projectslist-item {
+  margin-bottom: 30px;
+}
 .section-projectlist-title {
+  margin: 0;
+  margin-top: 20px;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -321,6 +417,10 @@ a {
   color: var(--title-text-color);
 }
 .section-projectlist-type {
+  margin: 0;
+  margin-top: 4px;
+  margin-bottom: 20px;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -330,6 +430,8 @@ a {
   color: var(--primary-text-color);
 }
 .section-projectlist-text {
+  margin: 0;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
