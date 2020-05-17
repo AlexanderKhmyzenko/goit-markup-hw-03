@@ -13,7 +13,6 @@
   --portfolio-bg-color: #ffffff;
 }
 
-/* CSS для вкладки Студия (index.html)*/
 html {
   box-sizing: border-box;
 }
@@ -23,7 +22,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
 /* body */
+
 .page {
   margin: 0;
 
@@ -36,22 +37,29 @@ a {
   text-decoration: none;
 }
 .list,
-.block-list,
 .section-list,
 .section-list-icon {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.advantages,
+.work,
+.customers,
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
 }
 /* Шапка сайта */
 .page-header {
   background-color: var(--header-bg-color);
 }
-.main-nav,
-.container-nav {
-  display: flex;
-  align-items: center;
-}
+
 .logo {
   margin-right: 86px;
   font-family: Raleway, sans-serif;
@@ -66,9 +74,10 @@ a {
   color: var(--title-text-color);
 }
 
-/* site-nav */
-.site-nav {
+.main-nav,
+.container-nav {
   display: flex;
+  align-items: center;
 }
 .site-nav .item {
   margin-right: 50px;
@@ -96,8 +105,8 @@ a {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
 .communication {
-  display: flex;
   margin-left: auto;
 }
 .communication .item + .item {
@@ -116,11 +125,14 @@ a {
 .communication .link:focus {
   color: var(--accent-color);
 }
-/* main */
-/* hero */
+
+/* CSS для вкладки Студия (index.html)*/
+
+/* Герой */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-bottom: 94px;
 
   background-image: url(/images/hero.svg);
   text-align: center;
@@ -137,7 +149,6 @@ a {
   height: 200px;
   text-align: center;
 }
-
 .hero-title {
   margin-top: 0;
   margin-bottom: 46px;
@@ -153,26 +164,34 @@ a {
   text-align: center;
   color: #ffffff;
 }
-.hero,
-.advantages,
-.work,
-.team,
-.customers {
+.button-primary {
+  display: inline-block;
+  padding: 10px 32px;
+
+  width: 200;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--button-text-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+/* Наши преимущества */
+
+.advantages {
   margin-bottom: 94px;
 }
-.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.block,
-.container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 2px solid tomato;
-}
+
+.advantages-title,
+.work-title,
+.team-title,
+.customers-title,
 .block-title,
 .section-title {
   margin: 0;
@@ -186,6 +205,13 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+.advantages-list .item,
+.customers-list .item,
+.work-list .item-work,
+.team-list .item,
+.section-list .item {
+  margin-right: 30px;
 }
 .block-list-text {
   margin: 0;
@@ -213,6 +239,11 @@ a {
   color: var(--title-text-color);
 }
 
+/* Чем мы занимаемся */
+
+.work {
+  margin-bottom: 94px;
+}
 .block-list-work {
   margin: 0;
 
@@ -232,8 +263,12 @@ a {
   color: var(--accent-color);
 }
 
-/* section */
-.section {
+/* Наша команда */
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 94px;
   background-color: var(--section-bg-color);
 }
 .section-list-title {
@@ -266,6 +301,9 @@ a {
   margin-top: 28px;
   margin-bottom: 36px;
 }
+/* .section-list-icon .item-icon {
+  margin-right: 35px;
+} */
 .section-list-icon-link {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -280,99 +318,42 @@ a {
   color: var(--accent-color);
 }
 
-/* button */
-.button-primary {
-  display: inline-block;
-  padding: 10px 32px;
+/* Постоянные клиенты */
 
-  width: 200;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--button-text-color);
-  background-color: var(--accent-color);
-  border-radius: 4px;
-}
-.button-secondary {
-  padding: 10px 45px;
-
-  width: 200;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 1.88;
-  display: inline-block;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--button-text-color);
-  background-color: var(--accent-color);
-  border-radius: 4px;
+.customers {
+  margin-bottom: 94px;
 }
 
-/* Footer */
-.footer {
-  background-color: var(--footer-bg-color);
-}
-.footer-studio {
-  color: var(--button-text-color);
-}
-.footer-contacts {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--address-text-color);
-}
-.footer-contacts-address {
-  color: var(--other-text-color);
-}
-.footer-social-media-act,
-.form-act {
-  color: var(--other-text-color);
-}
-.footer-social-media-list-link {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--address-text-color);
-}
-.footer-social-media-list-link:hover,
-.footer-social-media-list-link:focus {
-  color: var(--accent-color);
-}
-.footer-inscription {
-  color: var(--footer-inscription-color);
-  margin: 0;
-}
-
-/* CSS для вкладки Портфолио(portfolio.html) */
+/* CSS для вкладки Портфолио (portfolio.html) */
 
 .portfolio {
   background-color: var(--portfolio-bg-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section-list,
-.section-projectslist {
+.portfolio-list,
+.portfolio-projectslist {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.buttons {
-  margin-bottom: 50px;
+.portfolio-projectslist {
+  display: flex;
+  flex-wrap: wrap;
 }
-.section-list-button {
+.portfolio-list {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+  width: 632px;
+  align-items: center;
+}
+.portfolio-list .item-button + .item-button {
+  margin-left: 8px;
+}
+.portfolio-list-button {
   display: inline-block;
   padding: 6px 22px;
 
@@ -386,8 +367,8 @@ a {
   background: var(--section-bg-color);
   border-radius: 4px;
 }
-.section-list-button:hover,
-.section-list-button:focus {
+.portfolio-list-button:hover,
+.portfolio-list-button:focus {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -401,8 +382,17 @@ a {
     0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
-.section-projectslist-item {
+.portfolio-projectslist-item {
   margin-bottom: 30px;
+  margin-right: 30px;
+  width: calc((100% - 2 * 30px) / 3);
+  outline: 1px solid teal;
+}
+.portfolio-projectslist-item:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-projectslist-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 .section-projectlist-title {
   margin: 0;
@@ -439,4 +429,62 @@ a {
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+/* Футер */
+
+.footer {
+  background-color: var(--footer-bg-color);
+}
+.footer-studio {
+  color: var(--button-text-color);
+}
+.footer-contacts {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--address-text-color);
+}
+.footer-contacts-address {
+  color: var(--other-text-color);
+}
+.footer-social-media-act,
+.form-act {
+  color: var(--other-text-color);
+}
+.footer-social-media-list-link {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--address-text-color);
+}
+.footer-social-media-list-link:hover,
+.footer-social-media-list-link:focus {
+  color: var(--accent-color);
+}
+.button-secondary {
+  padding: 10px 45px;
+
+  width: 200;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.88;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--button-text-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+.footer-inscription {
+  color: var(--footer-inscription-color);
+  margin: 0;
 }
