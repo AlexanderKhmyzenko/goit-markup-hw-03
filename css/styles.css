@@ -161,6 +161,7 @@ a {
   margin-bottom: 94px;
 
   background-image: url(/images/hero.jpg);
+  background-image: url(./images/hero.jpg);
   text-align: center;
   height: 600px;
 }
