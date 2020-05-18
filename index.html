@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body class="page">
     <!-- Шапка сайта -->
     <header class="page-header">
@@ -78,18 +79,16 @@
         <!-- заголовок h2,которого нет в макете ,будет спрятан при стилизации -->
         <ul class="advantages-list list">
           <li class="item">
-            <img
-              src="./images/ramka.svg"
-              width="278"
-              height="120"
-              alt="Выделиный фон иконки"
-            />
-            <img
-              src="./images/antenna.svg"
-              width="70"
-              height="70"
-              alt="Спутниковая антенна"
-            />
+            <div class="antenna">
+              <img
+                class="advantages-images"
+                class=""
+                src="./images/antenna.svg"
+                width="70"
+                height="70"
+                alt="Спутниковая антенна"
+              />
+            </div>
             <h3 class="advantages-list-title">Внимание к деталям</h3>
             <p class="advantages-list-text">
               Идейные соображения, а также начало повседневной работы по
@@ -97,18 +96,14 @@
             </p>
           </li>
           <li class="item">
-            <img
-              src="./images/ramka1.svg"
-              width="278"
-              height="120"
-              alt="Серый фон иконки"
-            />
-            <img
-              src="./images/vector.svg"
-              width="70"
-              height="70"
-              alt="Стрелочные часы"
-            />
+            <div class="advantages-list-img">
+              <img
+                src="./images/vector.svg"
+                width="70"
+                height="70"
+                alt="Стрелочные часы"
+              />
+            </div>
             <h3 class="advantages-list-title">Пунктуальность</h3>
             <p class="advantages-list-text">
               Задача организации, в особенности же рамки и место обучения кадров
@@ -116,18 +111,14 @@
             </p>
           </li>
           <li class="item">
-            <img
-              src="./images/ramka1.svg"
-              width="278"
-              height="120"
-              alt="Серый фон иконки"
-            />
-            <img
-              src="./images/diagram.svg"
-              width="70"
-              height="70"
-              alt="Диаграмма на мониторе"
-            />
+            <div class="advantages-list-img">
+              <img
+                src="./images/diagram.svg"
+                width="70"
+                height="70"
+                alt="Диаграмма на мониторе"
+              />
+            </div>
             <h3 class="advantages-list-title">Планирование</h3>
             <p class="advantages-list-text">
               Равным образом консультация с широким активом в значительной
@@ -135,18 +126,14 @@
             </p>
           </li>
           <li class="item">
-            <img
-              src="./images/ramka1.svg"
-              width="278"
-              height="120"
-              alt="Серый фон иконки"
-            />
-            <img
-              src="./images/cosmonaut.svg"
-              width="70"
-              height="70"
-              alt="Летящий космонавт"
-            />
+            <div class="advantages-list-img">
+              <img
+                src="./images/cosmonaut.svg"
+                width="70"
+                height="70"
+                alt="Летящий космонавт"
+              />
+            </div>
             <h3 class="advantages-list-title">Современные технологии</h3>
             <p class="advantages-list-text">
               Значимость этих проблем настолько очевидна, что реализация
@@ -163,7 +150,7 @@
             <img
               src="./images/notebook.jpg"
               alt="Ноутбук"
-              width="380"
+              width="370"
               height="294"
             />
             <h3 class="work-list-title">Десктопные приложения</h3>
@@ -172,7 +159,7 @@
             <img
               src="./images/smartfon.jpg"
               alt="Смартфон"
-              width="380"
+              width="370"
               height="294"
             />
             <h3 class="work-list-title">Мобильные приложения</h3>
@@ -181,7 +168,7 @@
             <img
               src="./images/monitor.jpg"
               alt="Изображение на мониторе"
-              width="380"
+              width="370"
               height="294"
             />
             <h3 class="work-list-title">Дизайнерские решения</h3>
@@ -196,7 +183,7 @@
             <li class="item">
               <img
                 src="./images/john.jpg"
-                width="278"
+                width="270"
                 height="260"
                 alt="Фото Джона"
               />
@@ -210,12 +197,11 @@
                     class="team-list-icon-link"
                   >
                     <img
-                      src="./images/instagram2.svg"
+                      src="./images/instagram.svg"
                       width="20"
                       height="20"
                       alt="Иконка Instagram"
                     />
-                    Instagram
                   </a>
                 </li>
                 <li class="item-icon">
@@ -230,7 +216,6 @@
                       height="20"
                       alt="Иконка Twitter"
                     />
-                    Twitter
                   </a>
                 </li>
                 <li class="item-icon">
@@ -245,7 +230,6 @@
                       height="20"
                       alt="Иконка Facebook"
                     />
-                    Facebook
                   </a>
                 </li>
                 <li class="item-icon">
@@ -260,7 +244,6 @@
                       height="20"
                       alt="Иконка LinkedIn"
                     />
-                    LinkedIn
                   </a>
                 </li>
               </ul>
@@ -268,7 +251,7 @@
             <li class="item">
               <img
                 src="./images/marta.jpg"
-                width="278"
+                width="270"
                 height="260"
                 alt="Фото Марты"
               />
@@ -287,7 +270,6 @@
                       height="20"
                       alt="Иконка Instagram"
                     />
-                    Instagram
                   </a>
                 </li>
                 <li>
@@ -302,7 +284,6 @@
                       height="20"
                       alt="Иконка Twitter"
                     />
-                    Twitter
                   </a>
                 </li>
                 <li>
@@ -317,7 +298,6 @@
                       height="20"
                       alt="Иконка Facebook"
                     />
-                    Facebook
                   </a>
                 </li>
                 <li>
@@ -332,7 +312,6 @@
                       height="20"
                       alt="Иконка LinkedIn"
                     />
-                    LinkedIn
                   </a>
                 </li>
               </ul>
@@ -340,7 +319,7 @@
             <li class="item">
               <img
                 src="./images/robert.jpg"
-                width="278"
+                width="270"
                 height="260"
                 alt="Фото Роберта"
               />
@@ -359,7 +338,6 @@
                       height="20"
                       alt="Иконка Instagram"
                     />
-                    Instagram
                   </a>
                 </li>
                 <li>
@@ -374,7 +352,6 @@
                       height="20"
                       alt="Иконка Twitter"
                     />
-                    Twitter
                   </a>
                 </li>
                 <li>
@@ -389,7 +366,6 @@
                       height="20"
                       alt="Иконка Facebook"
                     />
-                    Facebook
                   </a>
                 </li>
                 <li>
@@ -404,7 +380,6 @@
                       height="20"
                       alt="Иконка LinkedIn"
                     />
-                    LinkedIn
                   </a>
                 </li>
               </ul>
@@ -412,7 +387,7 @@
             <li class="item">
               <img
                 src="./images/martin.jpg"
-                width="278"
+                width="270"
                 height="260"
                 alt="Фото Мартина"
               />
@@ -431,7 +406,6 @@
                       height="20"
                       alt="Иконка Instagram"
                     />
-                    Instagram
                   </a>
                 </li>
                 <li>
@@ -446,7 +420,6 @@
                       height="20"
                       alt="Иконка Twitter"
                     />
-                    Twitter
                   </a>
                 </li>
                 <li>
@@ -461,7 +434,6 @@
                       height="20"
                       alt="Иконка Facebook"
                     />
-                    Facebook
                   </a>
                 </li>
                 <li>
@@ -476,7 +448,6 @@
                       height="20"
                       alt="Иконка LinkedIn"
                     />
-                    LinkedIn
                   </a>
                 </li>
               </ul>
@@ -496,7 +467,7 @@
             >
               <img
                 src="./images/yaco.svg"
-                width="175"
+                width="170"
                 height="90"
                 alt="Логотип YA & CO"
               />
@@ -510,7 +481,7 @@
             >
               <img
                 src="./images/companytaglinehere.svg"
-                width="175"
+                width="170"
                 height="90"
                 alt="Логотип COMPANY TAGLINE HERE"
               />
@@ -524,7 +495,7 @@
             >
               <img
                 src="./images/company.svg"
-                width="175"
+                width="170"
                 height="90"
                 alt="Логотип COMPANY"
               />
@@ -538,7 +509,7 @@
             >
               <img
                 src="./images/fosterpeters.svg"
-                width="175"
+                width="170"
                 height="90"
                 alt="Логотип FOSTER PETERS"
               />
@@ -552,7 +523,7 @@
             >
               <img
                 src="./images/brand.svg"
-                width="175"
+                width="170"
                 height="90"
                 alt="Логотип BRAND"
               />
@@ -566,7 +537,7 @@
             >
               <img
                 src="./images/companytagline.svg"
-                width="175"
+                width="170"
                 height="90"
                 alt="Логотип COMPANY TAG LINE"
               />
@@ -586,8 +557,8 @@
           <address class="footer-contacts">
             <span class="footer-contacts-address"
               >г. Киев, пр-т Леси Украинки, 26</span
-            ><br />
-            <span class="footer-mail">info@example.com</span> <br />
+            >
+            <span class="footer-mail">info@example.com</span>
             <span class="footer-telephone">+38 099 111 11 11</span>
           </address>
         </div>
@@ -607,7 +578,6 @@
                   height="44"
                   alt="Иконка Instagram"
                 />
-                Instagram
               </a>
             </li>
             <li>
@@ -622,7 +592,6 @@
                   height="44"
                   alt="Иконка Twitter"
                 />
-                Twitter
               </a>
             </li>
             <li>
@@ -637,7 +606,6 @@
                   height="44"
                   alt="Иконка Facebook"
                 />
-                Facebook
               </a>
             </li>
             <li>
@@ -652,7 +620,6 @@
                   height="44"
                   alt="Иконка LinkedIn"
                 />
-                LinkedIn
               </a>
             </li>
           </ul>
@@ -660,8 +627,10 @@
         <!-- Форма подписки на рассылку -->
         <div class="form">
           <b class="form-act">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
-          <input type="text" />
-          <button type="button" class="button-secondary">Подписаться</button>
+          <div class="form-input">
+            <input type="text" />
+            <button type="button" class="button-secondary">Подписаться</button>
+          </div>
         </div>
       </div>
       <div class="container-inscription">
